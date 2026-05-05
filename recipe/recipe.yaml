@@ -12,12 +12,9 @@ package:
 source:
   - url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/types_deprecated-${{ version }}.tar.gz
     sha256: 62d6a86d0cc754c14bb2de31162d069b1c6a07ce11ee65e5258f8f75308eb3a3
-  - url: https://raw.githubusercontent.com/python/typeshed/3802899a01269df575ea32a21534c5400fb9218a/LICENSE
-    sha256: 295f8538c94ae5c3043301cf7cff1c852dab6a786a8ddee471e061b40d5ecabe
-    file_name: LICENSE
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script:
     - ${{ PYTHON }} -m pip install . -vv
